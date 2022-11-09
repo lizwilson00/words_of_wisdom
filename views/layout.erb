@@ -3,108 +3,8 @@
   <head>
     <title>Words of Wisdom</title>
     <meta charset="utf-8">
-    <%# <link href="/budget.css" rel="stylesheet" type="text/css">
-    <script src="/javascripts/jquery-3.6.1.js"></script>
-    <script src="/javascripts/application.js"></script> %>
+    <link href="/wow.css" rel="stylesheet" type="text/css">
     <link href="/favicon.ico" rel="icon" type="image/x-icon">
-    <style>
-      body {
-        font-family: Helvetica, Arial, sans-serif;
-      }
-
-      nav ul {
-        background-color: powderblue;
-        list-style-type: none;
-        padding-left: 0;
-        font-size: 0;
-        width: 60%;
-        margin: 10px 0 0 0;
-      }
-
-      nav li {
-        color: rgb(88, 88, 88);
-        font-size: 1.25rem;
-        display: inline-block;
-        text-align: center;
-        width: 50%;
-      }
-
-      nav a {
-        box-sizing: border-box;
-        color: rgb(88, 88, 88);
-        display: inline-block; 
-        line-height: 1.5;
-        padding: 0 10px;
-        text-decoration: none;
-        width: 100%;
-      }
-
-      nav a:hover,
-      nav a:focus {
-        background-color: rgb(88, 88, 88);
-        color: white;
-      }
-
-      .quote {
-        font-size: 1.2em;
-        color: gray;
-      }
-
-      header, fieldset, .message, nav, main {
-        border: none;
-        padding: 0;
-        width: 750px;
-        margin: 0 auto;
-      }
-
-      .message p {
-        background-color: rgb(248, 248, 121);
-        padding: 10px;
-        display: block;
-      }
-
-      ul {
-        list-style: none;
-      }
-
-      [type="text"], 
-      [type="number"], 
-      textarea {
-        border: 1px solid rgb(201, 201, 201);
-        box-sizing: border-box;
-        height: 30px;
-        padding: 3px 10px;
-        width: 100%;
-        font: normal 14px Helvetica, Arial, sans-serif;
-      }
-
-      [type="text"], 
-      [type="number"] {
-        width: 50%;
-      }
-
-      textarea {
-        height: auto;
-        resize: vertical;
-      }
-
-      dd {
-        margin: 0 0 25px;
-      }
-
-      .small {
-        font-size: small;
-        font-style: italic;
-      }
-
-      .author {
-        font-size: 1.1em;
-        font-style: italic;
-        padding-top: 15px;
-        font-weight: bold;
-        color: rgb(88, 88, 88);
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -131,7 +31,7 @@
     </nav>
     
     <main>
-      <%= yield %>
+      <%== yield %>
     </main>
   </body>
 </html>

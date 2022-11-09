@@ -8,7 +8,7 @@ require "yaml"
 configure do
   enable :sessions
   set :session_secret, 'secret123456789012345678901234567890123456789012345678901234567890'
-  # set :erb, :escape_html => true
+  set :erb, :escape_html => true
 end
 
 before do
