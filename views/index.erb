@@ -1,0 +1,49 @@
+<form action="/new" method="post">
+  <fieldset>
+    <h2>Share your words of wisdom</h2>
+    <dl>
+      <dt>
+        <label for="name">Your name:</label>
+      </dt>
+      <dd>
+        <input name="name" type="text">
+      </dd>
+      
+      <dt>
+        <label for="age">Your age:</label>
+      </dt>
+      <dd>
+        <input type="number" min="1" step="1" name="age">
+      </dd>
+
+      <dt>
+        <label for="location">Your location:</label>
+      </dt>
+      <dd>
+        <input name="location" type="text">
+      </dd>
+      
+      <dt>
+        <label for="content">Impart your words of wisdom:</label>
+        <p class="small">Note: Feel free to add <a href="https://www.markdownguide.org/cheat-sheet/" target="blank">markdown</a> to your story</p>
+      </dt>
+      <dd>
+        <textarea id="content" name="content" rows="10"><%= @content %></textarea>
+      </dd>
+
+      <dt>
+        <label for="category">My words pertain to:</label>
+      </dt>
+      <dd>
+        <select name="category" id="category">
+          <option>--Choose one--</option>
+        <% @categories.each do |category| %>
+          <option><%= category %></option>
+        <% end %>
+        </select>
+      </dd>
+    </dl>
+      <input type="reset">
+      <input type="submit" value="Save">
+  </fieldset>
+</form>

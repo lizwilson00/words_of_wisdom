@@ -1,0 +1,19 @@
+<form action="/view_inspiration" method="get">
+  <fieldset>
+    <h2>Be inspired</h2>
+    <dl>
+      <dt>
+        <label for="category">I want to be inspired about:</label>
+      </dt>
+      <dd>
+        <select name="category" id="category">
+          <option>--Choose one--</option>
+        <% available_categories.each do |category| %>
+          <option><%= category %></option>
+        <% end %>
+        </select>
+      </dd>
+    </dl>
+      <input type="submit" value="Submit">
+  </fieldset>
+</form>

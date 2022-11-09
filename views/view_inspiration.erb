@@ -1,0 +1,5 @@
+<div class="author">
+Words from <%= author_name(@target_filename) %>, age <%= author_age(@target_filename) %>, from <%= author_location(@target_filename) %>
+</div>
+
+<%= render_markdown(@file_content) %>
